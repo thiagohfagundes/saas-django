@@ -4,31 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a704566-7304-4823-bf42-cbe1f551ad22" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/saas-django.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agenda/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agenda/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agenda/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agenda/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agenda/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agenda/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agenda/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agenda/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/saas/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/saas/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/saas/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/saas/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/saas/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+    <list default="true" id="8a704566-7304-4823-bf42-cbe1f551ad22" name="Changes" comment="preparação para Raiway">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/railway.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +18,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "thiagohfagundes"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/thiagohfagundes/saas-django.git",
+    "accountId": "dbfc8660-0ee3-40a6-8e0b-70d275cb1b35"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 0
 }]]></component>
@@ -69,6 +61,19 @@
       <option name="presentableId" value="Default" />
       <updated>1724695466334</updated>
     </task>
+    <task id="LOCAL-00001" summary="preparação para Raiway">
+      <option name="closed" value="true" />
+      <created>1724698074671</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1724698074671</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="preparação para Raiway" />
+    <option name="LAST_COMMIT_MESSAGE" value="preparação para Raiway" />
   </component>
 </project>
