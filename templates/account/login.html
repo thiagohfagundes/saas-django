@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="flex items-center justify-center min-h-screen bg-gray-50">
+  <div class="w-full max-w-md p-8 space-y-8 bg-white border border-gray-200 rounded-lg shadow-sm">
+    <div class="text-center">
+      <h2 class="text-2xl font-bold">Login</h2>
+      <p class="mt-2 text-sm text-gray-600">Acesse sua conta</p>
+    </div>
+
+    <form method="post" action="{% url 'account_login' %}" class="space-y-6">
+      {% csrf_token %}
+
+      <div class="space-y-4">
+        <div>
+          <label for="login" class="block text-sm font-medium text-gray-700">Email ou Username</label>
+          <input type="text" id="login" name="login" value="{{ form.login.value }}" class="block w-full px-4 py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+          {% if form.login.errors %}
+            <p class="mt-2 text-sm text-red-600">{{ form.login.errors.0 }}</p>
+          {% endif %}
+        </div>
+
+        <div>
+          <label for="password" class="block text-sm font-medium text-gray-700">Senha</label>
+          <input type="password" id="password" name="password" value="{{ form.password.value }}" class="block w-full px-4 py-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+          {% if form.password.errors %}
+            <p class="mt-2 text-sm text-red-600">{{ form.password.errors.0 }}</p>
+          {% endif %}
+        </div>
+
+        <div class="flex items-center justify-between">
+          <label class="flex items-center text-sm text-gray-700">
+            <input type="checkbox" name="remember" class="text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+            <span class="ml-2">Lembrar de mim</span>
+          </label>
+          <a href="{% url 'account_reset_password' %}" class="text-sm text-blue-600 hover:underline">Esqueceu sua senha?</a>
+        </div>
+      </div>
+
+      <div>
+        <button type="submit" class="w-full px-4 py-2 text-white bg-blue-600 rounded-md shadow-sm hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:outline-none">Entrar</button>
+      </div>
+    </form>
+
+    <p class="text-sm text-center text-gray-600">Não tem uma conta? <a href="{% url 'account_signup' %}" class="text-blue-600 hover:underline">Crie uma</a></p>
+  </div>
+</div>
+{% endblock %}
